@@ -1,0 +1,22 @@
+# 忽略 node_modules
+node_modules/
+
+# 忽略环境变量文件
+.env
+
+# 忽略日志文件
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 忽略编译或打包后生成的文件夹(示例：dist 或 build)
+dist/
+build/
+
+# 如果你在前端使用了某些框架，也可根据情况加入更多
+# 比如如果你用 Vite，可以忽略 .vite 目录
+.vite/
+
+# 如果你用 React + create-react-app，可以忽略 .eslintcache
+.eslintcache
