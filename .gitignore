@@ -1,22 +1,90 @@
-# 忽略 node_modules
+# 忽略 node_modules 文件夹
 node_modules/
 
 # 忽略环境变量文件
 .env
+.env.local
+.env.*.local
 
 # 忽略日志文件
 *.log
 npm-debug.log*
 yarn-debug.log*
+pnpm-debug.log*
 yarn-error.log*
+lerna-debug.log*
 
-# 忽略编译或打包后生成的文件夹(示例：dist 或 build)
+# 忽略打包后生成的文件夹
 dist/
 build/
+out/
+.next/
+.nuxt/
+.cache/
+tmp/
 
-# 如果你在前端使用了某些框架，也可根据情况加入更多
-# 比如如果你用 Vite，可以忽略 .vite 目录
-.vite/
+# 忽略操作系统生成的临时文件
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
 
-# 如果你用 React + create-react-app，可以忽略 .eslintcache
+# 忽略测试覆盖率报告文件
+coverage/
+.nyc_output/
+
+# 忽略静态资源缓存文件
+.cache/
+public/static/
+
+# 忽略第三方工具生成的文件
 .eslintcache
+.parcel-cache/
+.vite/
+*.pid
+*.seed
+
+# 忽略 TypeScript 输出文件
+*.tsbuildinfo
+
+# 忽略 git-crypt 文件
+git-crypt/
+
+# 忽略前端框架文件
+# 如果你使用 create-react-app，则忽略以下文件
+.eslintcache
+node_modules/
+build/
+public/
+
+# 如果你使用 Next.js，则忽略以下文件
+.next/
+
+# 忽略 Redux DevTools
+.remote-redux-devtools/
+
+# 忽略 PWA 缓存文件
+workbox-cli-config.js
+
+# 忽略 Python 虚拟环境（如果项目包含 Python 部分）
+venv/
+
+# 忽略 Docker 文件
+docker-compose.override.yml
+.dockerignore
+Dockerfile
+
+# 如果你使用 Heroku 部署
+.heroku/
+
+# 如果你使用 VSCode 的调试配置文件
+launch.json
+tasks.json
+.vscode/
+
+# 如果你使用 macOS，忽略系统生成的临时文件
+._*
+.Spotlight-V100
+.Trashes
